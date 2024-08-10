@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 04:32:19 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC1IN0NJUUk4OzIwMjQtMDgtMDM7IjA0OjE5OjMwICI7MzQ1Mw=="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC1IN0NJUUk4OzIwMjQtMDgtMDM7IjA0OjMyOjE5ICI7MjszNTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numf, total" type="Integer" array="False" size=""/>
+            <comment text="Vars Definidas"/>
+            <output expression="&quot;Escolha temperatura em &#176;F: &quot;" newline="True"/>
+            <input variable="numf"/>
+            <comment text="Ler F para converter em C"/>
+            <assign variable="total" expression="conv(numf)"/>
+            <comment text="Chamar a fun&#231;ao"/>
+            <output expression="&quot;Convertendo &#176;F em &#176;C ira ficar &quot;&amp;total&amp;&quot;&#176;C&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="conv" type="Integer" variable="total">
+        <parameters>
+            <parameter name="numf" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="total" type="Integer" array="False" size=""/>
+            <comment text="expre&#231;oes"/>
+            <assign variable="total" expression="(numf-32) /1.8"/>
+        </body>
+    </function>
+</flowgorithm>

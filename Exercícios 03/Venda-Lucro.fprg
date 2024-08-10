@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 05:32:28 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC1IN0NJUUk4OzIwMjQtMDgtMDM7IjA0OjMyOjIyICI7MzQ0OQ=="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC1IN0NJUUk4OzIwMjQtMDgtMDM7IjA1OjMyOjI4ICI7MTszNTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NomeProduto" type="String" array="True" size="3"/>
+            <declare name="CustoProduto, VendaProduto" type="Integer" array="True" size="3"/>
+            <declare name="i, soma1, lucro" type="Integer" array="False" size=""/>
+            <declare name="cont" type="Integer" array="False" size=""/>
+            <assign variable="cont" expression="0"/>
+            <assign variable="soma1" expression="0"/>
+            <comment text="Var &#233; atribui&#231;&#245;es necessarias!"/>
+            <comment text="Loop para sele&#231;&#227;o de produtos com i sendo max 3"/>
+            <for variable="i" start="1" end="3" direction="inc" step="1">
+                <output expression="&quot;Digite o Nome do Produto &quot;&amp;i&amp;&quot;:&quot;" newline="True"/>
+                <input variable="NomeProduto[cont]"/>
+                <output expression="&quot;Digite o Custo dele:&quot;" newline="True"/>
+                <input variable="CustoProduto[cont]"/>
+                <output expression="&quot;Por quanto vc quer vender?:&quot;" newline="True"/>
+                <input variable="VendaProduto[cont]"/>
+                <assign variable="cont" expression="cont +1"/>
+            </for>
+            <comment text="nome &#233; lucro do produto "/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <assign variable="lucro" expression="VendaProduto[i]-CustoProduto[i]"/>
+                <output expression="&quot;Nome Do Produto: &quot;&amp;NomeProduto[soma1]&amp;&#13;&#10;&quot;//Ap&#243;s a venda o lucro desse produto foi de: &quot;&amp;lucro&amp;&quot;RS&quot;" newline="True"/>
+                <assign variable="soma1" expression="soma1 + 1"/>
+                <output expression="&quot;Proximo Produto!!&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
