@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-27 04:59:29 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC04UDdVNU04OzIwMjQtMDctMjc7IjA0OjQxOjUwICI7MzQ0MA=="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC04UDdVNU04OzIwMjQtMDctMjc7IjA0OjU5OjI5ICI7MjszNTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="par" type="Integer" array="False" size=""/>
+            <assign variable="par" expression="0"/>
+            <while expression="par&lt;=18">
+                <output expression="&quot;Seu N&#250;mero &#233; par&quot;&amp; par" newline="True"/>
+                <assign variable="par" expression="par+2"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
